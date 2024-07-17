@@ -1,6 +1,6 @@
 .venv
 allure-report
-
+allure-results
 .idea
 .pytest_cache
 __pycache__
