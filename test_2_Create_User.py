@@ -6,6 +6,9 @@ BASE_URL = "https://reqres.in/api"
 
 @allure.feature('User Management')
 @allure.story('Create User')
+@allure.title('Test Create User')
+@allure.description('This test case verifies that the system create user')
+@pytest.mark.smoke
 def test_create_user():
     user_data = {
         "name": "John Doe",
@@ -20,3 +23,5 @@ def test_create_user():
         assert "id" in data
         assert data["name"] == user_data["name"]
         assert data["job"] == user_data["job"]
+
+
